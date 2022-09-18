@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  urlBase: "https://chatcolab.firebaseio.com/crud/",
+  appClientId: "appproj01web",
   production: false
 };
 
