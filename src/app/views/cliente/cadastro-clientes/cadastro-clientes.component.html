@@ -1,0 +1,17 @@
+<h1>Cadastra novo cliente</h1>
+
+<form>
+    <div>
+        <label>Nome do Cliente</label>
+        <input type="text" id="nomecliente" name="nomecliente" placeholder="Entre aqui com o nome do cliente" ngControl="nomeCliente" />
+    </div>
+    <div>
+        <label>e-mail</label>
+        <input type="email" id="emailcliente" name="emailcliente" placeholder="Entre aqui com o e-mail do cliente" ngControl="emailCliente" />
+    </div>
+
+    <div>
+        <button type="button" (click)="salvarCliente()">Salvar</button>
+    </div>
+
+</form>
