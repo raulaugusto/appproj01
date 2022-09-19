@@ -2,7 +2,15 @@
 <div class="content" role="main">
   <h1>Cadastro de Clientes</h1>
 
-  <button type="button" routerLink="/novo-cadastro-cliente">
+  <h2>Listagem de clientes</h2>
+
+  <div class="row">
+    <div *ngFor="let cliente of listaCliente">
+      {{cliente.nome}} | {{cliente.cpf}} | {{cliente.cep}} | <a noref routerLink="/cadastro-cliente/{{cliente.id}}">Editar</a> | <a (click)="excluirCliente(cliente.id)">Exluir</a>
+    </div>
+  </div>
+
+  <button type="button" routerLink="/cadastro-cliente">
     Abre um novo Cadastro
   </button>
 
